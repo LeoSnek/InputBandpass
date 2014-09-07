@@ -12,7 +12,7 @@
 		B0C7F8F119BCE399001E7753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7F8EF19BCE399001E7753 /* Main.storyboard */; };
 		B0C7F8F319BCE399001E7753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C7F8F219BCE399001E7753 /* Images.xcassets */; };
 		B0C7F8FF19BCE399001E7753 /* InputBandpassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7F8FE19BCE399001E7753 /* InputBandpassTests.swift */; };
-		B0C7F90919BD00E8001E7753 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0C7F90819BD00E8001E7753 /* README.md */; };
+		B0C7F90D19BD025C001E7753 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0C7F90C19BD025C001E7753 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		B0C7F8F819BCE399001E7753 /* InputBandpassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputBandpassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C7F8FD19BCE399001E7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C7F8FE19BCE399001E7753 /* InputBandpassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBandpassTests.swift; sourceTree = "<group>"; };
-		B0C7F90819BD00E8001E7753 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../DatePicker/README.md; sourceTree = "<group>"; };
+		B0C7F90C19BD025C001E7753 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		B0C7F8DD19BCE399001E7753 = {
 			isa = PBXGroup;
 			children = (
-				B0C7F90819BD00E8001E7753 /* README.md */,
+				B0C7F90C19BD025C001E7753 /* README.md */,
 				B0C7F8E819BCE399001E7753 /* InputBandpass */,
 				B0C7F8FB19BCE399001E7753 /* InputBandpassTests */,
 				B0C7F8E719BCE399001E7753 /* Products */,
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C7F90919BD00E8001E7753 /* README.md in Sources */,
+				B0C7F90D19BD025C001E7753 /* README.md in Sources */,
 				B0C7F8EE19BCE399001E7753 /* ViewController.swift in Sources */,
 				B0C7F8EC19BCE399001E7753 /* AppDelegate.swift in Sources */,
 			);
