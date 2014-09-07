@@ -64,7 +64,6 @@ class ViewController: UIViewController {
         
         var filterParams = EQNode.bands[0] as AVAudioUnitEQFilterParameters
         filterParams.gain = val
-
     }
     
     @IBAction func bandwidth(sender: UISlider) {
@@ -107,8 +106,15 @@ class ViewController: UIViewController {
         startEngine()
     }
     
-    
-    
-    
+    @IBAction func bypass(sender: UISwitch) {
+        var filterParams = EQNode.bands[0] as AVAudioUnitEQFilterParameters
+        filterParams.bypass = sender.on
+        
+        if sender.on {
+            println("bypass")
+        } else {
+            println("no bypass")
+        }
+    }
 }
 
