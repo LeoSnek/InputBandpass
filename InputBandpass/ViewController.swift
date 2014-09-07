@@ -36,6 +36,7 @@ class ViewController: UIViewController {
 
         filterParams.filterType = .BandPass
         
+        // 20hz to nyquist
         filterParams.frequency = 5000.0
         
         //The value range of values is 0.05 to 5.0 octaves

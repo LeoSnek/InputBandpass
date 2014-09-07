@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-d1-CXw">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.050000000000000003" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-d1-CXw">
                                 <rect key="frame" x="14" y="35" width="163" height="31"/>
                                 <connections>
                                     <action selector="bandwidth:" destination="BYZ-38-t0r" eventType="valueChanged" id="PeL-nW-Ilg"/>
@@ -34,7 +34,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="100" maxValue="22050" translatesAutoresizingMaskIntoConstraints="NO" id="h6G-zz-ELh">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="20" maxValue="22050" translatesAutoresizingMaskIntoConstraints="NO" id="h6G-zz-ELh">
                                 <rect key="frame" x="14" y="101" width="163" height="31"/>
                                 <connections>
                                     <action selector="fq:" destination="BYZ-38-t0r" eventType="valueChanged" id="bpA-S0-HpT"/>
