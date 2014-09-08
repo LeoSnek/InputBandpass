@@ -30,7 +30,9 @@ class ViewController: UIViewController {
         engine = AVAudioEngine()
         
         EQNode = AVAudioUnitEQ(numberOfBands: 2)
+        EQNode.globalGain = 1
         engine.attachNode(EQNode)
+
         
         var filterParams = EQNode.bands[0] as AVAudioUnitEQFilterParameters
 
@@ -47,6 +49,10 @@ class ViewController: UIViewController {
         // in db -96 db through 24 d
         filterParams.gain = 15.0
         
+        var format = engine.inputNode.inputFormatForBus(0)
+        engine.connect(engine.inputNode, to: engine.mainMixerNode, format: format)
+        startEngine()
+        
     }
     
     func startEngine() {
@@ -59,12 +65,17 @@ class ViewController: UIViewController {
         }
     }
     
+    // https://developer.apple.com/library/prerelease/ios/documentation/AVFoundation/Reference/AVAudioUnitEQFilterParameters_Class/index.html#//apple_ref/c/tdef/AVAudioUnitEQFilterType
+    // According to this ^^^ you use the globalGain property for a bandpass filter.
+    // The gain filter is for Parametric and the shelf filters. But using globalGain is like using
+    // the master fader on the mixer. Try them and see.
     @IBAction func gain(sender: UISlider) {
         var val = sender.value
         println(String(format: "gain %f", val))
         
         var filterParams = EQNode.bands[0] as AVAudioUnitEQFilterParameters
-        filterParams.gain = val
+//        filterParams.gain = val
+        EQNode.globalGain = val
     }
     
     @IBAction func bandwidth(sender: UISlider) {

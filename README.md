@@ -12,6 +12,9 @@ Use headphones, or you'll hear feedback.
 [Blog post](http://www.rockhoppertech.com/blog/)
 coming soon
 
+My answer to a
+[Stackoverflow question](http://stackoverflow.com/questions/25688556/avaudiouniteq-bandpass-filter-doesnt-work)
+
 
 ## Bugs
 
